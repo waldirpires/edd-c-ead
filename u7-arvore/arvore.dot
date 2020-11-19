@@ -1,0 +1,24 @@
+# http://www.graphviz.org/content/cluster
+
+digraph G {
+
+
+    20->12
+    20->30
+
+    33
+
+    50->45[color=red]
+    45->24
+    45->49[color=red]
+    50->67
+    50->80
+
+    49->53[color=red]
+
+    50[color=red]
+    53[color=red]
+
+    // 50, 45, 24
+    "{Altura=3 | Profundidade=3}"
+}

@@ -1,0 +1,48 @@
+TAD Pilha
+[X]: célula cabeça
+
+Pilha 0/5
+TOPO <-> FUNDO
+
+### Empilhar X = 3
+TOPO -> [3]-> FUNDO
+
+### Empilhar X = 5
+Pilha 2/5
+TOPO -> [X]-> [5]-> [3]-> FUNDO
+
+### Empilhar X = 4
+Pilha 3/5
+TOPO -> [X]-> [4]-> [5]-> [3]-> FUNDO
+
+### Empilhar X = 9
+Pilha 4/5
+TOPO -> [X]-> [9]-> [4]-> [5]-> [3]-> FUNDO
+
+### Empilhar X = 2
+Pilha 5/5
+TOPO -> [X]-> [2]-> [9]-> [4]-> [5]-> [3]-> FUNDO
+
+### Desempilhar
+Pilha 4/5
+TOPO -> [X]-> [9]-> [4]-> [5]-> [3]-> FUNDO
+-> 2
+
+### Desempilhar
+Pilha 3/5
+TOPO -> [X]-> [4]-> [5]-> [3]-> FUNDO
+
+
+### Desempilhar
+Pilha 2/5
+TOPO -> [X]-> [5]-> [3]-> FUNDO
+-> 4
+
+item = 4
+
+  q = pilha->Topo;
+  pilha->Topo = q->Prox;
+  *item = q->Prox->Item;
+
+  free(q);
+  pilha->tamanho--;

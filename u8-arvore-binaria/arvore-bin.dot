@@ -1,0 +1,37 @@
+# http://www.graphviz.org/content/cluster
+
+digraph G {
+
+	//bst
+	//21
+
+	raiz[label=Raiz color=white]
+
+	raiz->21
+
+	// 13
+	21->13[label=esq]
+
+	// 33
+	21->33[label=dir]
+
+	//7
+	13->7[label=esq]
+
+	//17
+	13->17[label=dir]
+
+    // 26
+    33->26[label=esq]
+
+    //44
+    33->44[label=dir]
+
+
+    //43?
+
+    //43->44
+
+	44[color=orange, style=filled]
+
+}
